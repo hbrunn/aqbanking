@@ -273,7 +273,13 @@
                     <DbSetCharValue name="transactionText" path="AddtlNtryInf"/>
                     <DbSetCharValue name="purpose" mode="append" delimiter="\n" path="AddtlNtryInf"/>
                   </XmlIfHasCharData>
-    
+
+
+		  <XmlIfHasCharData path="NtryDtls/TxDtls/AddtlTxInf">
+                    <DbSetCharValue name="transactionText" path="NtryDtls/TxDtls/AddtlTxInf"/>
+                    <DbSetCharValue name="purpose" mode="append" delimiter="\n" path="NtryDtls/TxDtls/AddtlTxInf"/>
+                  </XmlIfHasCharData>
+
                   
                 </DbCreateAndEnterGroup> <!-- transaction --> 
              
